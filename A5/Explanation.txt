@@ -1,0 +1,12 @@
+1.	Why do we implement hashCode on individual objects, instead of centrally?  For example, why don't we create a new class that implements hashCode for different objects, or implement hashing functions in the hash table itself?
+
+Because Java’s base class is Object and since every class is a subclass of Object, all classes will inherit the hashCode method. But unless a class overrides hashCode, the method will return an int value based on the memory address used to invoke it. To be useful, hashing must map equal objects into the same location in a hash table. This means that equal but distinct objects will have different hash codes. An object’s hash code during one execution of a program can differ from its hash code during another execution of the same program.
+
+2.	Can you create a hashing function for an object that only has transient data?  Why or why not?
+
+You can, but it will be difficult to do so particularly because transient data is so fleeting and can be changed, therefore affecting your hash codes. Transient data can be changed around so you can have hash codes that are the same as another, therefore causing more collisions.
+
+
+3.	Let's say we have an object that has limited variability in its data - say, only 1000 possible combinations of values.  Can we create a hash code for such an object?  Why or why not?
+
+Yes, we can create a hash code for such an object. Because it only has 1000 possible combinations, each combination can have a specific hash code that is unique to that combination. There could be problems of collision, which you can try to avoid by mod-ing or other methods.

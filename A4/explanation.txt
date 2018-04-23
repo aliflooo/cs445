@@ -1,0 +1,23 @@
+What are the outputs for number of moves?
+  When tested with an array of size 100, the following results I got were:
+    1) Bubble Sorter
+          Moves: 2441
+    2) Merge Sorter
+          Moves: 622
+    3) Insertion Sorter
+          Moves: 2499
+    4) Selection Sorter
+          Moves: 99
+What are the outputs for runtime?
+    1) Bubble Sorter
+          Runtime: 346982 ns
+    2) Merge Sorter
+          Runtime: 69915 ns
+    3) Insertion Sorter
+          Runtime: 228935 ns
+    4) Selection Sorter
+          Runtime: 112641 ns
+How do your results compare to your understanding of these algorithms?
+  The results that I received make sense upon my understanding of these algorithms. I assumed that Bubble Sorter would be the least effective of the sorting algorithms, ad proved to be the least efficient. Selection Sort was more intuitive and used the least amount of moves, but ultimately was not the quickest.
+If they are different, why do you think this is?
+  I was surprised to see how quick the runtime for Merge Sort was, because it was quicker than Selection Sort, but still had more moves than the latter.

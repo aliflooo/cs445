@@ -1,0 +1,12 @@
+1) Which implementation is faster for small amounts of pushes?
+	Arrays
+2) Which implementation is faster for small amounts of pops?
+	Arrays
+3) Which implementation is faster for larger amounts of pushes?
+	Linked
+4) Which implementation is faster for larger amounts of pops?
+	Linked
+5) How do you explain your results for 1-4?  Were any results surprising?  Why or why not?
+	Arrays seemed to be the faster option when considering smaller amounts of pushes and pops, while linked implementations were faster if the numbers were bigger. The results were not surprising since we learned in class that arrays were the best option for smaller stacks and linked stacks were best for bigger ones. 
+6) What are the tradeoffs to be considered in these implementations?
+	It costs more to use arrays when considering large implementations and costs more to use linked when considering small implementations. 
